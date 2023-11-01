@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    Variables
+    </title>
+  </head>
+  <body>
+  <script>
+
+    /* poti denumi variable in 3 feluri:
+       1. cu "let" cand sti ca valoarea variabile se schimba
+       2. cu "const" cand sti ca valoarea variabilei nu se schimba.
+          De preferabil sa folosesti by default "const" daca sti ca nu se schimba valoarea, decat sa folosesti "let".
+       3. cu "var" dar in JS nou nu prea se mai foloseste varianta asta din cauza unor probleme
+          Deci folosim "const" by default si cand trebuie sa schimbi valoarea variabilei, folosesti "let"
+    */
+
+    let variable1 = 3;
+    console.log(variable1);
+
+    const calculation = 2 + 2;
+    console.log(calculation);
+    console.log(calculation + 2);
+
+    const result = calculation + 2;
+    console.log(result);
+
+    const message = 'hello';
+    console.log(message); console.log(';');
+
+    variable1 = 5;
+    console.log(variable1);
+
+    variable1 = variable1 + 1;
+    console.log(variable1);
+
+    const variable2 = 3;
+    var variable3 = 3;
+    console.log(typeof variable2);
+    console.log(typeof message);
+  </script>
+  </body>
+</html>
