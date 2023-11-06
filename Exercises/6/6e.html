@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script>
+      let age = 5;
+      let isHoliday = true;
+
+      if ((age <= 6 || age >= 65) && isHoliday === false) {
+        console.log('Discount');
+      } else {
+        console.log('No discount');
+      }
+
+      age = 69;
+      isHoliday = false;
+
+      if ((age <= 6 || age >= 65) && isHoliday === false) {
+        console.log('Discount');
+      } else {
+        console.log('No discount');
+      }
+
+      age = 37;
+
+      if ((age <= 6 || age >= 65) && !isHoliday) {
+        console.log('Discount');
+      } else {
+        console.log('No discount');
+      }
+    </script>
+  </body>
+</html>
