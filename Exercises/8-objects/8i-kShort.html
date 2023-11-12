@@ -29,6 +29,12 @@
 
         result === ('You Win.' || 'You Lose.') ? score.wins++ : score.losses++;
 
+        /* if (guess === result) {
+          score.wins++;
+        } else {
+          score.losses++;
+        } */
+
         alert(`You guessed ${guess}, the coin toss was ${coinToss}. ${result}
 Wins: ${score.wins} Losses: ${score.losses}`);
 
