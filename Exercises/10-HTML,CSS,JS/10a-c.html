@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .add-to-cart-button {
+      background-color: rgb(255, 230, 0);
+      border: none;
+      font-size: 20px;
+      padding: 10px 60px;
+      border-radius: 30px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .request-now-button {
+      background-color: black;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      padding: 12px 17px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .schedule-for-later-button {
+      background-color: rgb(230, 230, 230);
+      color: black;
+      border: none;
+      font-weight: bold;
+      font-size: 15px;
+      padding: 12px 17px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <button class="add-to-cart-button">
+    Add to Cart
+  </button>
+  <button class="request-now-button">
+    Request now
+  </button>
+  <button class="schedule-for-later-button">
+    Schedule for later
+  </button>
+  <div>
+    <button class="js-button">Test</button>
+  </div>
+  <script>
+    const elementButton = document.querySelector('.js-button');
+    console.log(elementButton.classList.contains('js-button'));
+  </script>
+</body>
+</html>
