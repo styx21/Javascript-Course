@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+    </title>
+  </head>
+  <body>
+    <script>
+      function minMax(nums) {
+        let minNum = nums[0];
+        let maxNum = nums[0];
+       
+
+        for (let i = 0; i < nums.length; i++) {
+          if (nums[i] < minNum) {
+           minNum = nums[i];
+          }
+
+          if (nums[i] > maxNum) {
+            maxNum = nums[i];
+          }
+      }
+      return `{min: ${minNum}, max: ${maxNum}}`
+      
+    }
+      console.log(minMax([1, -3, 5]));
+      console.log(minMax([-2, 3, -5, 7, 10]));
+      
+    </script>
+  </body>
+</html>
