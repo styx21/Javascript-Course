@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  <script>
+    const coinToss = Math.random();
+    let result = '';
+    const guess = 'tails';
+
+    if (coinToss < 0.5) {
+      result = 'heads';
+    } else {
+      result = 'tails';
+    }
+
+    if ( result === guess) {
+      console.log('You win!');
+    } else {
+      console.log('You lose!');
+    }
+  </script>
+  </body>
+</html>
