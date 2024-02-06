@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      
+    </title>
+  </head>
+  <body>
+    <button onclick="
+      displayChoice('heads');
+      " class="js-button-heads">
+      heads</button>
+
+    <button onclick="
+      displayChoice('tails');
+    " class="js-button-tails">
+    tails</button>
+
+    <p class="js-display-choice"></p>
+
+    <script>
+      function displayChoice(choice) {
+        let displayElement = document.querySelector('.js-display-choice');
+
+        if (choice === 'heads') {
+          displayElement.innerText = 'You chose: heads';
+        } else {
+          displayElement.innerText = 'You chose: tails'
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      
+    </title>
+  </head>
+  <body>
+    <input placeholder="Type something" onkeyup="
+        updateText();
+      " class="js-input">
+
+    <p class="js-text"></p>
+    
+  <script>
+    function updateText() {
+      let inputElement = document.querySelector('.js-input');
+      let displayElement = document.querySelector('.js-text');
+      let valueElement = inputElement.value;
+
+      displayElement.innerHTML = valueElement;
+    }
+  </script>
+  </body>
+</html>
