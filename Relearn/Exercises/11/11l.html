@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+  <script>
+    function minMax(nums) {
+      let obj = {
+        min: nums[0],
+        max: nums[0]
+      };
+
+      for(let i = 0; i < nums.length; i++) {
+        if(nums[i] < nums[0]) {
+          obj.min = nums[i];
+        }
+        
+        // instead of using nums[0] in if condition, should have used obj.min & max to compare.
+
+        if(nums[i] > nums[0]) {
+          obj.max = nums[i];
+        }
+      }
+      return obj;
+    }
+    console.log(minMax([1, -3, 5]));
+    console.log(minMax([-2, 3, -5, 7, 10]));
+    console.log(minMax([-2, 3, -5, 7, 10, -4]));
+
+    // a crapat functia pentru ca nu am folosit obj.min si am comparat cu num[0] mereu.
+  </script>
+  </body>
+</html>
