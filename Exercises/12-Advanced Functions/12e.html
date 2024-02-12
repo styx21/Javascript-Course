@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <button class="js-button"
+    onclick="
+      displayMessage();
+    ">Add to cart</button>
+
+    <p class="display-text"></p>
+    <script>
+
+      function displayMessage() {
+        const text = document.querySelector('.display-text');
+
+        text.innerHTML = 'Added';
+        setTimeout(function() {
+          text.innerHTML = '';
+        }, 2000);
+      }
+    </script>
+  </body>
+</html>
