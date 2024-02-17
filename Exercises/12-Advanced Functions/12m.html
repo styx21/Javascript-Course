@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <script>
+      function addNum(array, num) {
+        return array.map(indexValue => indexValue + num)
+      }
+      console.log(addNum([1, 2, 3], 2));
+      console.log(addNum([-2, -1, 0, 99], 2));
+
+      // short version vs long version
+
+      function addNum2(array, num) {
+        return array.map((indexValue) => {
+         return indexValue + num;
+        });
+      }
+
+      console.log(addNum2([1, 2, 3], 2));
+      console.log(addNum2([-2, -1, 0, 99], 2));
+    </script>
+  </body>
+</html>

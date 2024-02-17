@@ -4,28 +4,28 @@
     <title></title>
   </head>
   <body>
-    <button class="js-button"
-    onclick="
-      displayMessage();
-    ">Add to cart</button>
+    <button class="js-button">Add to cart</button>
 
     <p class="display-text"></p>
     <script>
 
       let timeoutId;
 
-      function displayMessage() {
-        const text = document.querySelector('.display-text');
+      document.querySelector('.js-button')
+        .addEventListener('click', () => {
+          const text = document.querySelector('.display-text');
 
-        clearTimeout(timeoutId);
+          clearTimeout(timeoutId);
 
-        text.innerHTML = 'Added';
-        timeoutId = setTimeout(function() {
+          text.innerHTML = 'Added';
+          timeoutId = setTimeout(() => {
           text.innerHTML = '';
-        }, 2000);
+          }, 2000);
+        })
+        
 
         
-      }
+      
     </script>
   </body>
 </html>

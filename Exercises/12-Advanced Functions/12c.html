@@ -4,18 +4,15 @@
     <title></title>
   </head>
   <body>
-    <button class="js-button"
-    onclick="
-    updateButton();
-    ">Start</button>
+    <button class="js-button">Start</button>
     <script>
-      function updateButton() {
-        const button = document.querySelector('.js-button');
-
-        setTimeout(function() {
-          button.innerHTML = 'Finished!';
-        }, 1000);
-      }
-    </script>
+      document.querySelector('.js-button')
+        .addEventListener('click', () => {
+          const button = document.querySelector('.js-button')
+          setTimeout(() => {
+            button.innerHTML = 'Finished!';
+            }, 1000);
+        });
+  </script>
   </body>
 </html>
